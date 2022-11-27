@@ -313,6 +313,7 @@ class DevelopmentPage:
                                      "<extra></extra>",
                                      ))
         fig.update_layout(
+            xaxis=dict(title="Year"),
             yaxis=dict(range=[-0.06, 0.21], title="Revenue Ratio (%)"),
             height=600,
             **general_style
