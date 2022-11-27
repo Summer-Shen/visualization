@@ -17,7 +17,7 @@ import plotly_express as px
 import pandas as pd
 import plotly.graph_objs as go
 
-d = pd.read_csv("total_sale_province_new (2).csv")
+d = pd.read_csv("dataset/monthly/total_sale_province_new (2).csv")
 d.head(10)
 
 d.dropna(axis='index',how='any',inplace=True)
@@ -108,7 +108,7 @@ def paint_fig_ts(years=['2019','2020','2021','2022'],province='Beijing'):
 
 paint_fig_ts().show()
 
-d_f = pd.read_csv("floor_space_province_new.csv")
+d_f = pd.read_csv("dataset/monthly/floor_space_province_new.csv")
 d_f.head(10)
 
 d_f.dropna(axis='index',how='any',inplace=True)
