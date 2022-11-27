@@ -1,8 +1,4 @@
 # Real Estate Market Visualization
-* ./dashboard
-  * This visualization project contains three pages and the dash layout of them stored in: 
-    * DevelopmentPage.py
-    * SalePage.py 
-    * InvestmentPage.py
-  * figure.py is the code for generating different figure in that pages
-  * Other file can be ignored
+
+This is the whole repository for our visualization project. To run the whole project, please execute all files 
+in ./dashboard/ with name *XXX*Page.py.
