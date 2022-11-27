@@ -24,14 +24,7 @@ d.dropna(axis='index',how='any',inplace=True)
 d.head(10)
 
 import operator
-years=['2019','2020','2021','2022']
-df=d[d['Province']=='Beijing']
-for y in years:
-    df_CB=df[df['Building Type'].isin(['Commercialized Buildings Sold'])&df['Date'].str.contains('|'.join(years))]
-    df_CRB=df[df['Building Type'].isin(['Commercialized Residential Buildings Sold'])&df['Date'].str.contains('|'.join(years))]
-    df_OB=df[df['Building Type'].isin(['Office Buildings Sold'])&df['Date'].str.contains('|'.join(years))]
-    df_HBU=df[df['Building Type'].isin(['Houses for Business Use Sold'])&df['Date'].str.contains('|'.join(years))] 
-df_CB
+
 
 def paint_fig_ts(years=['2019','2020','2021','2022'],province='Beijing'):
   df=d[d['Province']==province]
@@ -114,8 +107,7 @@ d_f.head(10)
 d_f.dropna(axis='index',how='any',inplace=True)
 d_f.head(200)
 
-List=['2019','2020']
-d_f[d_f['Province']=='Beijing']
+
 
 def paint_fig_fs(years=['2019','2020','2021','2022'],province='Country'):
   df_f=d_f[d_f['Province']==province]
